@@ -1,7 +1,7 @@
-import  "./category-item.styles.scss";
+import "./category-item.styles.scss";
 
-const categoryItem = () =>{
-    const categories  = [
+const CategoryItem = () => {
+    const categories = [
         {
             "id": 1,
             "title": "hats",
@@ -28,12 +28,12 @@ const categoryItem = () =>{
             "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
         }
     ]
-    return(
+    return (
         <div className="categories-container">
-            {categories.map(({title,id, imageUrl}) => (
+            {categories.map(({ title, id, imageUrl }) => (
                 <div key={id} className="category-container ">
                     <div className="background-image"
-                         style={{backgroundImage: `url(${imageUrl})`}}></div>
+                        style={{ backgroundImage: `url(${imageUrl})` }}></div>
                     <div className="category-body-container">
                         <h2>{title}</h2>
                         <p>Shop Now</p>
@@ -43,4 +43,4 @@ const categoryItem = () =>{
         </div>
     )
 }
-export default  categoryItem();
+export default CategoryItem;

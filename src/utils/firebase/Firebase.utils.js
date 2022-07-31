@@ -12,7 +12,7 @@ import {
     getDoc,
     setDoc
 } from "firebase/firestore"
-
+//copied from firebase site
 const firebaseConfig = {
     apiKey: "AIzaSyCl5FrOy-2szycJdyE3Koxzr7aE_thyZ6g",
     authDomain: "react-eccomerce-bfaeb.firebaseapp.com",

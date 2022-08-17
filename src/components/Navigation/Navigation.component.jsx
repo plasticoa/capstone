@@ -4,6 +4,8 @@ import "./Navigation.styles.scss";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utils/firebase/Firebase.utils";
+import CartIcon from '../Carticon/Carticon.component';
+import CartDropdown from '../Cartdropdown/Cartdropdown.component';
 
 const Navigation = () => {
     const { currentUser } = useContext(UserContext);
@@ -25,7 +27,9 @@ const Navigation = () => {
                             <Link className="nav-link" to='/signin'>SIGN IN</Link>
                         )
                     }
+                    <CartIcon />
                 </div>
+                <CartDropdown />
             </div>
             <Outlet></Outlet>
         </Fragment>
